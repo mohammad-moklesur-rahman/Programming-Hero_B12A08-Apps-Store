@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2991/2991148.png",
+    "title": "TaskMaster Pro",
+    "companyName": "NextGen Labs",
+    "id": 1,
+    "description": "A smart task management app with AI scheduling that helps you organize your daily activities, set priorities, manage deadlines, and boost productivity with intelligent automation and seamless collaboration features for teams.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.6,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 520 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2936/2936886.png",
+    "title": "FitTrack",
+    "companyName": "Healthify Corp",
+    "id": 2,
+    "description": "Track your fitness goals and daily activity with comprehensive health monitoring features including calorie tracking, workout plans, step counter, heart rate monitoring, sleep analysis, and personalized fitness recommendations to achieve your wellness targets.",
+    "size": 60,
+    "reviews": 890,
+    "ratingAvg": 4.2,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 340 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/1040/1040241.png",
+    "title": "PhotoGenix",
+    "companyName": "PixelWave",
+    "id": 3,
+    "description": "Edit your photos with stunning filters and effects using professional-grade tools including advanced color correction, beauty enhancements, artistic filters, collage maker, background remover, and AI-powered editing features to create amazing visual content effortlessly.",
+    "size": 95,
+    "reviews": 3400,
+    "ratingAvg": 4.8,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 2080 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2991/2991106.png",
+    "title": "NoteEase",
+    "companyName": "BrightCode Studios",
+    "id": 4,
+    "description": "Organize your ideas and tasks with beautiful notes featuring rich text formatting, voice recordings, image attachments, cloud sync across devices, powerful search capabilities, customizable templates, and intuitive folder organization for seamless note-taking experience.",
+    "size": 25,
+    "reviews": 760,
+    "ratingAvg": 4.4,
+    "downloads": 210000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 340 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2995/2995101.png",
+    "title": "MusicFlow",
+    "companyName": "Harmony Media",
+    "id": 5,
+    "description": "Stream and download your favorite songs offline with access to millions of tracks, curated playlists, personalized recommendations, high-quality audio streaming, lyrics display, podcast library, and social sharing features for the ultimate music listening experience.",
+    "size": 80,
+    "reviews": 5000,
+    "ratingAvg": 4.7,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 3200 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2331/2331970.png",
+    "title": "ShopSmart",
+    "companyName": "EcomX",
+    "id": 6,
+    "description": "Compare prices and shop from trusted brands with intelligent price tracking, deal alerts, product reviews, barcode scanner, wishlist management, secure payment options, order tracking, and personalized shopping recommendations to save money on every purchase.",
+    "size": 70,
+    "reviews": 2300,
+    "ratingAvg": 4.3,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 900 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3898/3898082.png",
+    "title": "LanguageGo",
+    "companyName": "EduNova",
+    "id": 7,
+    "description": "Learn new languages with interactive lessons featuring conversation practice, vocabulary building exercises, grammar tutorials, pronunciation guides, real-world scenarios, progress tracking, gamified learning experiences, and native speaker audio to achieve fluency faster and effectively.",
+    "size": 110,
+    "reviews": 1700,
+    "ratingAvg": 4.5,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 890 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/1163/1163661.png",
+    "title": "WeatherCast",
+    "companyName": "SkyTech",
+    "id": 8,
+    "description": "Accurate forecasts with radar and live alerts providing hourly and daily weather predictions, severe weather warnings, interactive weather maps, air quality index, UV index, wind speed data, precipitation tracking, and location-based weather updates worldwide.",
+    "size": 50,
+    "reviews": 3100,
+    "ratingAvg": 4.1,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1150 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2913/2913133.png",
+    "title": "MindEase",
+    "companyName": "CalmWorks",
+    "id": 9,
+    "description": "Meditation and relaxation techniques for stress relief offering guided meditation sessions, breathing exercises, sleep stories, ambient soundscapes, mindfulness practices, anxiety management tools, mood tracking, and personalized wellness programs to improve mental health and well-being.",
+    "size": 65,
+    "reviews": 4200,
+    "ratingAvg": 4.9,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 3300 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/825/825474.png",
+    "title": "CryptoVault",
+    "companyName": "FinCore",
+    "id": 10,
+    "description": "Track and manage your cryptocurrency portfolio securely with real-time price updates, market analysis, transaction history, portfolio diversification tools, price alerts, multi-wallet support, advanced security features, and comprehensive crypto news to maximize your investment returns.",
+    "size": 75,
+    "reviews": 950,
+    "ratingAvg": 4.0,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 260 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2798/2798087.png",
+    "title": "TripMate",
+    "companyName": "TravelBee",
+    "id": 11,
+    "description": "Plan trips, find hotels, and explore destinations with comprehensive travel guides, flight booking, accommodation search, itinerary planning, local attractions, restaurant recommendations, travel budget calculator, offline maps, and user reviews for unforgettable travel experiences worldwide.",
+    "size": 95,
+    "reviews": 2100,
+    "ratingAvg": 4.4,
+    "downloads": 650000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 170 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 980 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3976/3976625.png",
+    "title": "EduSpark",
+    "companyName": "BrightMind",
+    "id": 12,
+    "description": "Online courses and skill-building platform featuring thousands of expert-led courses, interactive video lessons, quizzes and assessments, certification programs, personalized learning paths, community forums, downloadable resources, and lifetime access to continuously expand your knowledge and career opportunities.",
+    "size": 120,
+    "reviews": 3100,
+    "ratingAvg": 4.6,
+    "downloads": 870000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1730 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3208/3208799.png",
+    "title": "NewsScope",
+    "companyName": "GlobalFeed",
+    "id": 13,
+    "description": "Stay informed with personalized news feeds covering breaking news, world events, business updates, technology trends, sports highlights, entertainment news, customizable topics, bookmarking features, offline reading mode, and trusted sources from around the globe for comprehensive news coverage.",
+    "size": 55,
+    "reviews": 1400,
+    "ratingAvg": 4.1,
+    "downloads": 520000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 450 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2830/2830284.png",
+    "title": "FinancePal",
+    "companyName": "MoneyHub",
+    "id": 14,
+    "description": "Budget tracking and expense management app with automatic transaction categorization, spending insights, bill reminders, savings goals, financial reports, investment tracking, debt management tools, bank account sync, and smart budgeting features to take complete control of your finances.",
+    "size": 65,
+    "reviews": 2500,
+    "ratingAvg": 4.3,
+    "downloads": 980000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1120 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/686/686589.png",
+    "title": "GameArena",
+    "companyName": "PlayMax",
+    "id": 15,
+    "description": "Discover trending games and connect with players through an extensive gaming library, multiplayer matchmaking, live streaming, gaming communities, tournament participation, achievement tracking, game reviews, friend lists, voice chat, and social features for the ultimate gaming experience.",
+    "size": 150,
+    "reviews": 5000,
+    "ratingAvg": 4.8,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 3150 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/1046/1046784.png",
+    "title": "CookBook Pro",
+    "companyName": "KitchenWare Inc.",
+    "id": 16,
+    "description": "Discover recipes and create custom meal plans with thousands of cooking recipes, step-by-step instructions, nutritional information, shopping list generator, cooking timers, dietary filters, video tutorials, ingredient substitutions, and community recipe sharing for delicious home cooking every day.",
+    "size": 85,
+    "reviews": 1300,
+    "ratingAvg": 4.5,
+    "downloads": 480000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 510 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3330/3330290.png",
+    "title": "Readify",
+    "companyName": "BookVerse",
+    "id": 17,
+    "description": "Read and share eBooks across genres and authors with access to millions of digital books, customizable reading experience, night mode, bookmarks, highlights, notes, reading progress sync, book recommendations, author profiles, and community discussions for passionate readers everywhere.",
+    "size": 95,
+    "reviews": 2700,
+    "ratingAvg": 4.7,
+    "downloads": 1150000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1470 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2721/2721665.png",
+    "title": "StockPulse",
+    "companyName": "InvestIQ",
+    "id": 18,
+    "description": "Real-time stock market insights and alerts featuring live stock quotes, market news, technical analysis, watchlists, portfolio tracking, earnings reports, price alerts, financial charts, dividend information, and expert commentary to make informed investment decisions and grow your wealth.",
+    "size": 70,
+    "reviews": 1950,
+    "ratingAvg": 4.2,
+    "downloads": 630000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 870 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/733/733585.png",
+    "title": "ChatLink",
+    "companyName": "ComHub",
+    "id": 19,
+    "description": "Secure and fast messaging for personal and business use with end-to-end encryption, group chats, voice and video calls, file sharing, message scheduling, read receipts, status updates, stickers and emojis, cross-platform sync for seamless communication anytime anywhere.",
+    "size": 100,
+    "reviews": 4200,
+    "ratingAvg": 4.6,
+    "downloads": 1600000,
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 2560 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2716/2716054.png",
+    "title": "DriveSync",
+    "companyName": "CloudWave",
+    "id": 20,
+    "description": "Backup and sync your files securely across devices with automatic cloud backup, file versioning, selective sync, folder sharing, collaborative editing, advanced encryption, offline access, unlimited storage options, and seamless integration with multiple platforms for complete data protection.",
+    "size": 90,
+    "reviews": 2300,
+    "ratingAvg": 4.3,
+    "downloads": 870000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1020 }
+    ]
+  }
+]
