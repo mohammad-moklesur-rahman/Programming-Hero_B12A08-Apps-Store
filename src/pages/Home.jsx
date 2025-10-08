@@ -1,9 +1,13 @@
-import React from 'react'
+import Banner from "../components/home/Banner";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="bg-[#F5F5F5]">
+      <div className="text-center pt-20">
+        <Banner />
+      </div>
+    </div>
+  );
+};
 
-export default Home
+export default Home;

@@ -1,6 +1,17 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* * Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  font-family: "Inter", sans-serif;
+}
+
 .active{
   @apply bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-[#9F62F2]
+}
+
+.primary-color{
+  @apply bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent
 }

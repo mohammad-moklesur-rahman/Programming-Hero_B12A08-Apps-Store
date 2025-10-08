@@ -43,7 +43,7 @@ const Navbar = () => {
             </div>
             <Link to="/" className="flex justify-center items-center gap-1">
               <img className="w-7" src={logoImg} alt="" />
-              <p className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent text-[18px]">
+              <p className="primary-color text-[18px]">
                 B12A08
               </p>
             </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <a href="https://github.com/mohammad-moklesur-rahman" target="_blank" className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white">{<FaGithub />} Contribute</a>
+            <a href="https://github.com/mohammad-moklesur-rahman/Programming-Hero_B12A08-Apps-Store" target="_blank" className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white">{<FaGithub />} Contribute</a>
           </div>
         </div>
       </div>
