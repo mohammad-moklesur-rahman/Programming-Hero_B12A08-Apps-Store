@@ -1,8 +1,17 @@
 import { useLoaderData } from "react-router";
 import AppsCard from "../components/apps/AppsCard";
+import { useState } from "react";
 
 const Apps = () => {
-  const data = useLoaderData()
+  const data = useLoaderData();
+  const [search, setSearch] = useState("");
+  const searchTerm = search.trim().toLocaleLowerCase();
+  const searchedData = searchTerm
+    ? data.filter((appInfo) =>
+        appInfo.title.toLocaleLowerCase().includes(searchTerm)
+      )
+    : data;
+
   return (
     <div className="bg-[#F5F5F5]">
       <div className="container mx-auto py-20">
@@ -16,7 +25,9 @@ const Apps = () => {
         </div>
         <div className="flex justify-between items-center mb-[22px]">
           <div>
-            <h2 className="text-2xl text-[#001931] font-semibold">{`(${data.length})`} Apps Found</h2>
+            <h2 className="text-2xl text-[#001931] font-semibold">
+              {`(${searchedData.length})`} Apps Found
+            </h2>
           </div>
           <div>
             <label className="input">
@@ -36,12 +47,18 @@ const Apps = () => {
                   <path d="m21 21-4.3-4.3"></path>
                 </g>
               </svg>
-              <input type="search" required placeholder="Search" />
+              <input
+                onChange={(e) => setSearch(e.target.value)}
+                type="search"
+                required
+                placeholder="Search"
+                value={search}
+              />
             </label>
           </div>
         </div>
         <div>
-          <AppsCard data={data} />
+          <AppsCard searchedData={searchedData} />
         </div>
       </div>
     </div>
