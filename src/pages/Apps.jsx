@@ -30,7 +30,7 @@ const Apps = () => {
   return (
     <div className="bg-[#F5F5F5]">
       <div className="container mx-auto py-20">
-        <div className="text-center mb-10">
+        <div className="text-center mb-10 px-4 sm:px-0">
           <h2 className="text-[#001931] text-[48px] font-bold">
             Our All Applications
           </h2>
@@ -38,9 +38,9 @@ const Apps = () => {
             Explore All Apps on the Market developed by us. We code for Millions
           </p>
         </div>
-        <div className="flex justify-between items-center mb-[22px]">
+        <div className="flex flex-col sm:flex-row justify-between items-center mb-[22px]">
           <div>
-            <h2 className="text-2xl text-[#001931] font-semibold">
+            <h2 className="text-2xl text-[#001931] font-semibold mb-4 sm:mb-0">
               {`(${searchedData.length})`} Apps Found
             </h2>
           </div>

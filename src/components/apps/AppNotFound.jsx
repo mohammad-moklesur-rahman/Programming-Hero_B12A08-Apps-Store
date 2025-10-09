@@ -9,7 +9,7 @@ const AppNotFound = () => {
         <figure className="flex justify-center">
           <img src={appNotFoundImg} alt="" />
         </figure>
-        <h2 className="text-[48px] text-[#001931] font-semibold mt-6">
+        <h2 className="text-2xl sm:text-[48px] text-[#001931] font-semibold mt-6">
           OPPS!! APP NOT FOUND
         </h2>
         <p className="text-[20px] text-[#627382]">

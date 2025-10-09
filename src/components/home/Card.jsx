@@ -9,10 +9,10 @@ const Card = ({ fatchPromice }) => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="grid grid-cols-4 gap-6 mt-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
         {trandingData.map((info) => {
           return (
-            <>
+            <div key={info.id}>
               <div onClick={() => navigate(`/apps/${info.id}`)} className="card bg-base-100 shadow-sm hover:scale-95 cursor-pointer">
                 <div className="p-4">
                   <figure className="bg-[#D9D9D9] rounded-[10px] p-2">
@@ -33,7 +33,7 @@ const Card = ({ fatchPromice }) => {
                   </div>
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
       </div>

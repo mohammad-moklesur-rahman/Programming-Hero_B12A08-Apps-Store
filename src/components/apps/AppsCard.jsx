@@ -10,10 +10,10 @@ const AppsCard = ({ searchedData }) => {
       {searchedData.length === 0 ? (
         <AppNotFound />
       ) : (
-        <div className="grid grid-cols-4 gap-6 mt-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
           {searchedData.map((info) => {
             return (
-              <>
+              <div key={info.id}>
                 <div
                   onClick={() => navigate(`/apps/${info.id}`)}
                   className="card bg-base-100 shadow-sm hover:scale-95 cursor-pointer"
@@ -41,7 +41,7 @@ const AppsCard = ({ searchedData }) => {
                     </div>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>

@@ -35,7 +35,7 @@ const AppDetails = () => {
   }, [id]);
 
   const handelInstalledBtn = () => {
-    if(disabled) return;
+    if (disabled) return;
     setDisabled(true);
     setLocalStorage(appData);
     toast(`${title} Installed`);
@@ -43,60 +43,70 @@ const AppDetails = () => {
   return (
     <div className="bg-[#F5F5F5]">
       <div className="container mx-auto py-20">
-        <div className="flex gap-4 border-b-1 border-[#ccced0] pb-10">
-          <div>
+        <div className="flex flex-col lg:flex-row gap-4 border-b-1 border-[#ccced0] pb-10">
+          <div className="flex justify-center md:justify-start">
             <figure className="bg-white w-88 p-4">
               <img src={image} alt="" />
             </figure>
           </div>
           <div className="w-full">
-            <div className="border-b-1 border-[#ccced0] pb-4">
-              <h2 className="text-[32px] text-[#001931] font-bold">
-                {companyName}: {title}
-              </h2>
-              <p className="text-[20px] text-[#627382]">
-                Developed by{" "}
-                <span className="primary-color">{companyName}</span>
-              </p>
-            </div>
-            <div className="flex gap-15 my-8">
+            <div className="flex justify-center md:justify-start border-b-1 border-[#ccced0] pb-4">
               <div>
-                <img className="w-7" src={downloadIcon} alt="" />
-                <p className="text-[#001931] mt-2">Downloads</p>
-                <h2 className="text-[40px] text-[#001931] font-extrabold">
-                  {downloads}
+                <h2 className="text-[32px] text-[#001931] font-bold">
+                  {companyName}: {title}
                 </h2>
-              </div>
-              <div>
-                <img className="w-7" src={ratingIcon} alt="" />
-                <p className="text-[#001931] mt-2">Average Ratings</p>
-                <h2 className="text-[40px] text-[#001931] font-extrabold">
-                  {ratingAvg}
-                </h2>
-              </div>
-              <div>
-                <img className="w-7" src={reviewIcon} alt="" />
-                <p className="text-[#001931] mt-2">Total Reviews</p>
-                <h2 className="text-[40px] text-[#001931] font-extrabold">
-                  {reviews}
-                </h2>
+                <p className="text-[20px] text-[#627382]">
+                  Developed by{" "}
+                  <span className="primary-color">{companyName}</span>
+                </p>
               </div>
             </div>
-            <button
-              onClick={handelInstalledBtn}
-              className={`btn text-white text-[20px] font-semibold ${
-                disabled ? "bg-gray-400 cursor-not-allowed" : "bg-[#00D390]"
-              }`}
-            >
-              {disabled ? "Installed" : `Install Now (${size} MB)`}
-            </button>
+            <div className="flex flex-col md:flex-row gap-15 my-8">
+              <div className="flex justify-center">
+                <div>
+                  <img className="w-7" src={downloadIcon} alt="" />
+                  <p className="text-[#001931] mt-2">Downloads</p>
+                  <h2 className="text-[40px] text-[#001931] font-extrabold">
+                    {downloads}
+                  </h2>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <div>
+                  <img className="w-7" src={ratingIcon} alt="" />
+                  <p className="text-[#001931] mt-2">Average Ratings</p>
+                  <h2 className="text-[40px] text-[#001931] font-extrabold">
+                    {ratingAvg}
+                  </h2>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <div>
+                  <img className="w-7" src={reviewIcon} alt="" />
+                  <p className="text-[#001931] mt-2">Total Reviews</p>
+                  <h2 className="text-[40px] text-[#001931] font-extrabold">
+                    {reviews}
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center md:justify-start">
+              <button
+                onClick={handelInstalledBtn}
+                className={`btn text-white text-[20px] font-semibold ${
+                  disabled ? "bg-gray-400 cursor-not-allowed" : "bg-[#00D390]"
+                }`}
+              >
+                {disabled ? "Installed" : `Install Now (${size} MB)`}
+              </button>
+            </div>
           </div>
         </div>
         <div className="h-100 border-b-1 border-[#ccced0] py-10">
           <h2 className="text-2xl font-semibold text-[#001931]">Ratings</h2>
           <Rechart ratings={ratings} />
         </div>
-        <div>
+        <div className="px-4 sm:px-0">
           <h2 className="text-2xl font-semibold text-[#001931] mt-10">
             Description
           </h2>

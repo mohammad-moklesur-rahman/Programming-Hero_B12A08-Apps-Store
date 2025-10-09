@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="bg-[#001931]">
       <div className="container mx-auto">
-        <div className="pt-[35px] flex justify-between items-center border-b-1 border-[#627382] pb-2">
+        <div className="pt-[35px] flex justify-between items-center border-b-1 border-[#627382] pb-2 px-4 md:px-0">
           <div className="flex gap-2">
             <img className="w-7" src={logo} alt="" />
             <h2 className="text-white">B12A08 Apps Store</h2>

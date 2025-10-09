@@ -17,10 +17,10 @@ const InstalledApps = ({sortItem, appFoundCount }) => {
     <>
       {sortItem.map((appInfo) => {
         return (
-          <>
+          <div key={appInfo.id}>
             <div className="bg-white my-4 rounded-[10px]">
-              <div className="p-4 flex justify-between items-center">
-                <div className="flex gap-2 items-center">
+              <div className="p-4 flex flex-col sm:flex-row justify-between items-center">
+                <div className="flex flex-col sm:flex-row gap-2 items-center">
                   <figure className="bg-gray-100 p-2 rounded-2xl">
                     <img className="w-20" src={appInfo.image} alt="" />
                   </figure>
@@ -51,7 +51,7 @@ const InstalledApps = ({sortItem, appFoundCount }) => {
                 </div>
               </div>
             </div>
-          </>
+          </div>
         );
       })}
     </>
