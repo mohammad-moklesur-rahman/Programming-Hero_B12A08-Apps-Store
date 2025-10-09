@@ -3,9 +3,9 @@ import downloadIcon from "../assets/icon-downloads.png";
 import ratingIcon from "../assets/icon-ratings.png";
 import reviewIcon from "../assets/icon-review.png";
 import Rechart from "../components/apps/Rechart";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import { setLocalStorage } from "../utils/LocalStorage";
+import { getLocalStorage, setLocalStorage } from "../utils/LocalStorage";
 
 const AppDetails = () => {
   const data = useLoaderData();
@@ -25,7 +25,17 @@ const AppDetails = () => {
   } = appData;
 
   const [disabled, setDisabled] = useState(false);
+
+  useEffect(() => {
+    const installedApps = getLocalStorage();
+    const isAlreadyInstalled = installedApps?.some((app) => app.id === id);
+    if (isAlreadyInstalled) {
+      setDisabled(true);
+    }
+  }, [id]);
+
   const handelInstalledBtn = () => {
+    if(disabled) return;
     setDisabled(true);
     setLocalStorage(appData);
     toast(`${title} Installed`);
@@ -74,8 +84,8 @@ const AppDetails = () => {
             </div>
             <button
               onClick={handelInstalledBtn}
-              className={`btn bg-[#00D390] text-white text-[20px] font-semibold ${
-                disabled ? "bg-gray-400 cursor-not-allowed" : ""
+              className={`btn text-white text-[20px] font-semibold ${
+                disabled ? "bg-gray-400 cursor-not-allowed" : "bg-[#00D390]"
               }`}
             >
               {disabled ? "Installed" : `Install Now (${size} MB)`}

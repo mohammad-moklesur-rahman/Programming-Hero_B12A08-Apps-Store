@@ -20,7 +20,6 @@ const Installation = () => {
     }
   }, [sortOrder, installedData]);
 
-  console.log(sortItem);
   return (
     <div className="bg-[#F5F5F5]">
       <div className="container mx-auto py-20">

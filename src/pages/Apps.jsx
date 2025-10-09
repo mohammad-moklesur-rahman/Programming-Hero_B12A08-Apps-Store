@@ -1,16 +1,31 @@
 import { useLoaderData } from "react-router";
 import AppsCard from "../components/apps/AppsCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Loading from "../components/Loading";
 
 const Apps = () => {
   const data = useLoaderData();
   const [search, setSearch] = useState("");
-  const searchTerm = search.trim().toLocaleLowerCase();
-  const searchedData = searchTerm
-    ? data.filter((appInfo) =>
-        appInfo.title.toLocaleLowerCase().includes(searchTerm)
-      )
-    : data;
+  const [searchedData, setSearchedData] = useState(data);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+
+    const timeout = setTimeout(() => {
+      const searchTerm = search.trim().toLowerCase();
+      const filteredData = searchTerm
+        ? data.filter((appInfo) =>
+            appInfo.title.toLowerCase().includes(searchTerm)
+          )
+        : data;
+
+      setSearchedData(filteredData);
+      setIsLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timeout);
+  }, [search, data]);
 
   return (
     <div className="bg-[#F5F5F5]">
@@ -57,9 +72,13 @@ const Apps = () => {
             </label>
           </div>
         </div>
-        <div>
-          <AppsCard searchedData={searchedData} />
-        </div>
+        {isLoading ? (
+          <Loading />
+        ) : (
+          <div>
+            <AppsCard searchedData={searchedData} />
+          </div>
+        )}
       </div>
     </div>
   );

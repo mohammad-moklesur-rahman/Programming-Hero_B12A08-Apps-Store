@@ -2,10 +2,12 @@ import { useState } from "react";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import { removeData } from "../../utils/LocalStorage";
+import { toast } from "react-toastify";
 
 const InstalledApps = ({sortItem, appFoundCount }) => {
   const [updateInstalled, setUpdateInstalled] = useState(sortItem);
   const handelUninstallBtn = (id) => {
+    toast("Uninstall Successfully")
     removeData(id);
     setUpdateInstalled((prev) => prev.filter((aInfo) => aInfo.id !== id));
   };

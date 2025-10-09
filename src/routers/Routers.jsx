@@ -1,10 +1,13 @@
 import { createBrowserRouter } from "react-router"
 import Home from "../pages/Home";
 import RootLayout from "../layout/RootLayout";
-import Apps from "../pages/Apps";
 import Installation from "../pages/Installation";
-import appDetails from "../pages/appDetails";
 import ErrorPage from "../pages/ErrorPage";
+import { lazy, Suspense } from "react";
+import Loading from "../components/Loading";
+
+const Apps = lazy(() => import("../pages/Apps"));
+const AppDetails = lazy(() => import("../pages/AppDetails"));
 
 const router = createBrowserRouter([
   {
@@ -23,12 +26,12 @@ const router = createBrowserRouter([
       {
         path: "/apps",
         loader: () =>fetch('/data.json'),
-        Component: Apps
+        element: (<Suspense fallback={<Loading />}><Apps /></Suspense>)
       },
       {
         path: "/apps/:appId",
         loader: () =>fetch('/data.json'),
-        Component: appDetails
+        element: (<Suspense fallback={<Loading />}><AppDetails /></Suspense>)
       },
       {
         path: "/installation",
